@@ -1,13 +1,15 @@
-class CountA{
-	private final char TOKEN='A';
-	public static void main(String[]args){
-		
-	}
-}
-public CountA(String raw)
-{
-	int tot=0;
-	for(int i=0; i!=raw.length(); i++)
-		if(raw.charAt(i)==TOKEN) tot++;
-	System.out.println("Total of As In"+ raw+tot);
+import java.util.Scanner;
+public class countA{
+    public static void main(String[]args){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter a string ：");
+        String a = sc.nextLine();
+        int sum =0;
+        for(int i=0;i<a.length();i++){
+            if (a.charAt(i)=='A'){
+                sum++;
+            }
+        }
+        System.out.println("The num of times the character'A' is found : "+sum);
+    }
 }
